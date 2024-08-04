@@ -1,4 +1,4 @@
-module github.com/OpenShopChannel/WSC-Patcher
+module github.com/randomyaps/LaunchPatcher
 
 go 1.17
 
