@@ -15,7 +15,7 @@ import (
 )
 
 // baseDomain holds our needed base domain.
-var baseDomain string
+var baseDomain = "shop.8tx.icu"
 
 // mainDol holds the main DOL - our content at index 1.
 var mainDol []byte
@@ -40,18 +40,7 @@ func createDir(path string) {
 }
 
 func main() {
-	if len(os.Args) != 2 {
-		fmt.Printf("Usage: %s <base domain>\n", os.Args[0])
-		fmt.Println("For more information, please refer to the README.")
-		os.Exit(-1)
-	}
-
-	baseDomain = os.Args[1]
-	if len(baseDomain) > 12 {
-		fmt.Println("The given base domain must not exceed 12 characters.")
-		fmt.Println("For more information, please refer to the README.")
-		os.Exit(-1)
-	}
+	
 
 	fmt.Println("===========================")
 	fmt.Println("=       WSC-Patcher       =")
